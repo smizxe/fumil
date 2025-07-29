@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            width: 200px;
+            background-color: lightcoral;
+            margin: 5px;
+        }
+
+        .box2 {
+            flex-grow: 1;
+            flex-basis: 200px;
+            background-color: lightseagreen;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Dòng 1: width (cứng)</h3>
+    <div class="container">
+        <div class="box1">Box 1</div>
+        <div class="box1">Box 2</div>
+        <div class="box1">Box 3</div>
+    </div>
+
+    <h3>Dòng 2: flex-basis + flex-grow (linh hoạt)</h3>
+    <div class="container">
+        <div class="box2">Box 1</div>
+        <div class="box2">Box 2</div>
+        <div class="box2">Box 3</div>
+    </div>
+
+</body>
+
+</html>
