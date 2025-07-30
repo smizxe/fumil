@@ -426,14 +426,27 @@ div.hero {
 }
 
 @media only screen and (max-width: 600px) {
+
     /*Common Setup*/
+    html,
     body {
         font-size: 16px;
+        width: 100vw;
+        max-width: 100vw;
+        overflow-x: hidden;
+
     }
 
     /*nav*/
     .nav {
         position: static;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .nav ul {
+        width: 100%;
+        padding: 0;
     }
 
     /*Hero Section*/
@@ -459,6 +472,11 @@ div.hero {
     }
 
     /* Our Mission section */
+    .mission-section {
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+    }
     .mission-image {
         display: none;
     }
